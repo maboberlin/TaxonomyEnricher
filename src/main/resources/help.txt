@@ -1,0 +1,16 @@
+COMMAND LIST
+-------------------
+init - initialization of base data
+enrich[?<parameterlist>] (see below) - enrichs code table
+undo[?<code>] (see below) - undo enrichment
+save - save codetable to file
+help - help
+
+PARAMETER LIST
+(pass parameters as key=value pairs via url)
+----------------------------------------------------
+enricher=[stringdifference, significantstringdifference,<type>+<type>+...] - enricher type parameter
+code=<codename>	- code parameter
+steps=<number> - number of steps until completion of enrichment (except initial step constant = 1)
+enrichCriteria=[THRESHOLD, TOTALNUMBER, RELATIVENUMBER] - enrich criteria type parameter
+enrichValue=[*] - enrich criteria value parameter
